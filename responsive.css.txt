@@ -1,0 +1,383 @@
+/* ==========================================
+   RESPONSIVE.CSS
+   VINAUM SKINS
+==========================================*/
+
+/* ======= 1400px ======= */
+
+@media (max-width:1400px){
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.heroLogo{
+
+width:200px;
+
+}
+
+}
+
+/* ======= 1200px ======= */
+
+@media (max-width:1200px){
+
+header{
+
+padding:18px 5%;
+
+}
+
+section{
+
+padding:90px 5%;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.steps{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ======= 992px ======= */
+
+@media (max-width:992px){
+
+nav{
+
+display:none;
+
+}
+
+.btnHeader{
+
+display:none;
+
+}
+
+header{
+
+justify-content:center;
+
+}
+
+.hero{
+
+padding-top:170px;
+
+}
+
+.heroLogo{
+
+width:180px;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+}
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+footer{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
+/* ======= 768px ======= */
+
+@media (max-width:768px){
+
+.hero{
+
+min-height:auto;
+
+padding:150px 20px 70px;
+
+}
+
+.heroLogo{
+
+width:150px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:1.6;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.btnPrimary{
+
+width:100%;
+
+max-width:320px;
+
+}
+
+.btnSecondary{
+
+width:100%;
+
+max-width:320px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.steps{
+
+grid-template-columns:1fr;
+
+}
+
+.stats h2{
+
+font-size:42px;
+
+}
+
+section h2{
+
+font-size:34px;
+
+}
+
+.cta h2{
+
+font-size:34px;
+
+}
+
+footer img{
+
+height:55px;
+
+}
+
+}
+
+/* ======= 480px ======= */
+
+@media (max-width:480px){
+
+header{
+
+padding:15px;
+
+}
+
+.logo img{
+
+height:48px;
+
+}
+
+.hero{
+
+padding-top:140px;
+
+}
+
+.heroLogo{
+
+width:130px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.card{
+
+padding:30px 22px;
+
+}
+
+.card i{
+
+font-size:42px;
+
+}
+
+.card h2{
+
+font-size:22px;
+
+}
+
+.stats div{
+
+padding:30px;
+
+}
+
+.stats h2{
+
+font-size:34px;
+
+}
+
+.step{
+
+padding:30px;
+
+}
+
+.step span{
+
+width:60px;
+
+height:60px;
+
+font-size:24px;
+
+}
+
+.cta{
+
+padding:80px 20px;
+
+}
+
+.cta h2{
+
+font-size:28px;
+
+}
+
+.cta a{
+
+width:100%;
+
+font-size:18px;
+
+padding:18px;
+
+}
+
+footer{
+
+padding:50px 20px;
+
+}
+
+footer div{
+
+justify-content:center;
+
+}
+
+.whatsappFloat{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+right:20px;
+
+bottom:20px;
+
+}
+
+}
+
+/* ======= Telas muito pequenas ======= */
+
+@media (max-width:360px){
+
+.hero h1{
+
+font-size:26px;
+
+}
+
+.heroLogo{
+
+width:110px;
+
+}
+
+.btnPrimary,
+.btnSecondary{
+
+font-size:16px;
+
+padding:16px;
+
+}
+
+section h2{
+
+font-size:28px;
+
+}
+
+}

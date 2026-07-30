@@ -1,0 +1,164 @@
+/* ==========================================
+   VINAUM SKINS - script.js
+==========================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* ==========================
+       HEADER AO ROLAR
+    ========================== */
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 60) {
+            header.style.background = "rgba(5,8,22,.90)";
+            header.style.boxShadow = "0 10px 30px rgba(0,0,0,.35)";
+            header.style.padding = "14px 7%";
+        } else {
+            header.style.background = "rgba(5,8,22,.45)";
+            header.style.boxShadow = "none";
+            header.style.padding = "18px 7%";
+        }
+    });
+
+    /* ==========================
+       SCROLL REVEAL
+    ========================== */
+    const reveals = document.querySelectorAll(
+        ".card, .step, .skinCard, .stats div, .cta, .heroContent"
+    );
+
+    function reveal() {
+        reveals.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < window.innerHeight - 80) {
+                el.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", reveal);
+    reveal();
+
+    /* ==========================
+       CONTADORES
+    ========================== */
+    const counters = document.querySelectorAll(".stats h2");
+    let started = false;
+
+    function startCounters() {
+        if (started) return;
+
+        const stats = document.querySelector(".stats");
+        if (!stats) return;
+
+        const top = stats.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 120) {
+            started = true;
+
+            counters.forEach(counter => {
+                const text = counter.innerText;
+                const target = parseInt(text.replace(/\D/g, ""));
+
+                if (isNaN(target)) return;
+
+                let value = 0;
+                const speed = Math.max(1, Math.floor(target / 80));
+
+                const interval = setInterval(() => {
+                    value += speed;
+
+                    if (value >= target) {
+                        value = target;
+                        clearInterval(interval);
+                    }
+
+                    if (text.includes("+")) {
+                        counter.innerHTML = value.toLocaleString() + "+";
+                    } else if (text.includes("★")) {
+                        counter.innerHTML = "4.9★";
+                    } else {
+                        counter.innerHTML = value;
+                    }
+                }, 20);
+            });
+        }
+    }
+
+    window.addEventListener("scroll", startCounters);
+    startCounters();
+
+    /* ==========================
+       BOTÃO VOLTAR AO TOPO
+    ========================== */
+    const topBtn = document.createElement("button");
+    topBtn.innerHTML = "↑";
+    topBtn.className = "topButton";
+    document.body.appendChild(topBtn);
+
+    topBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+            topBtn.classList.add("visible");
+        } else {
+            topBtn.classList.remove("visible");
+        }
+    });
+
+    /* ==========================
+       BOTÃO WHATSAPP FLUTUANTE
+    ========================== */
+    const whatsapp = document.createElement("a");
+    whatsapp.href = "https://wa.me/5512981739656";
+    whatsapp.target = "_blank";
+    whatsapp.className = "whatsappFloat";
+    whatsapp.innerHTML = '<i class="fab fa-whatsapp"></i>';
+    document.body.appendChild(whatsapp);
+
+    /* ==========================
+       BRILHO NO MOUSE
+    ========================== */
+    const glow = document.createElement("div");
+    glow.className = "cursorGlow";
+    document.body.appendChild(glow);
+
+    document.addEventListener("mousemove", e => {
+        glow.style.left = e.clientX + "px";
+        glow.style.top = e.clientY + "px";
+    });
+
+    /* ==========================
+       EFEITO PARALLAX NO HERO (CORRIGIDO)
+    ========================== */
+    window.addEventListener("mousemove", e => {
+        const heroContent = document.querySelector(".heroContent");
+        if (!heroContent) return;
+
+        const x = (e.clientX / window.innerWidth - 0.5) * 15;
+        const y = (e.clientY / window.innerHeight - 0.5) * 15;
+
+        heroContent.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    /* ==========================
+       HOVER NAS SKINS
+    ========================== */
+    document.querySelectorAll(".skinCard").forEach(card => {
+        card.addEventListener("mousemove", e => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            card.style.setProperty("--x", x + "px");
+            card.style.setProperty("--y", y + "px");
+        });
+    });
+
+});

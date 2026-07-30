@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINAUM SKINS | Compra e Venda de Skins CS2</title>
+    <meta name="description" content="Compra, venda e upgrade de skins de Counter-Strike 2 com atendimento rápido e seguro.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div id="particles"></div>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Vinaum Skins">
+        </div>
+
+        <nav>
+            <a href="#beneficios">Vantagens</a>
+            <a href="#como">Como Funciona</a>
+            <a href="#skins">Skins</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="btnHeader" href="https://wa.me/5512981739656" target="_blank">
+            WhatsApp
+        </a>
+    </header>
+
+    <section class="hero">
+        <div class="heroContent">
+            <h4 class="miniTitle">★★★★★ +2.000 CLIENTES SATISFEITOS</h4>
+            <img class="heroLogo" src="assets/logo.png" alt="Vinaum Skins Logo">
+            <h1>NEGOCIE SKINS DE CS2 <span>COM SEGURANÇA</span></h1>
+            <p>Os melhores preços para compra, venda e upgrade de skins.</p>
+
+            <div class="buttons">
+                <a href="https://wa.me/5512981739656" class="btnPrimary" target="_blank">💬 NEGOCIAR AGORA</a>
+                <a href="https://instagram.com/vinaum.skins" class="btnSecondary" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="cards">
+        <div class="card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Compra Segura</h2>
+            <p>Negociações transparentes.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-bolt"></i>
+            <h2>Resposta Rápida</h2>
+            <p>Atendimento em poucos minutos.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-credit-card"></i>
+            <h2>Pix • Crypto</h2>
+            <p>Diversas formas de pagamento.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+            <h2>Upgrade</h2>
+            <p>Use suas skins como parte do pagamento.</p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div>
+            <h2>8500+</h2>
+            <p>Skins Negociadas</p>
+        </div>
+        <div>
+            <h2>2000+</h2>
+            <p>Clientes</p>
+        </div>
+        <div>
+            <h2>4.9★</h2>
+            <p>Avaliação</p>
+        </div>
+    </section>
+
+    <section id="como" class="timeline">
+        <h2>Como Funciona</h2>
+        <div class="steps">
+            <div class="step">
+                <span>1</span> Escolha sua skin
+            </div>
+            <div class="step">
+                <span>2</span> Chame no WhatsApp
+            </div>
+            <div class="step">
+                <span>3</span> Receba a proposta
+            </div>
+            <div class="step">
+                <span>4</span> Negócio concluído
+            </div>
+        </div>
+    </section>
+
+    <section id="skins" class="gallery">
+        <h2>Skins em Destaque</h2>
+        <div class="skinsGrid">
+            <article class="skinCard">
+                <div class="rarity covert"></div>
+                <img src="assets/skins/karambit.png" alt="Karambit">
+                <h3>Karambit</h3>
+                <p>Facas • Diversos modelos</p>
+                <a href="https://wa.me/5512981739656" target="_blank">Consultar</a>
+            </article>
+
+            <article class="skinCard">
+                <div class="rarity covert"></div>
+                <img src="assets/skins/butterfly.png" alt="Butterfly">
+                <h3>Butterfly</h3>
+                <p>Fade • Doppler • Slaughter</p>
+                <a href="https://wa.me/5512981739656" target="_blank">Consultar</a>
+            </article>
+
+            <article class="skinCard">
+                <div class="rarity classified"></div>
+                <img src="assets/skins/m9.png" alt="M9 Bayonet">
+                <h3>M9 Bayonet</h3>
+                <p>Todas disponíveis</p>
+                <a href="https://wa.me/5512981739656" target="_blank">Consultar</a>
+            </article>
+
+            <article class="skinCard">
+                <div class="rarity classified"></div>
+                <img src="assets/skins/ak.png" alt="AK-47">
+                <h3>AK-47</h3>
+                <p>Fire Serpent • Vulcan • Neon Rider</p>
+                <a href="https://wa.me/5512981739656" target="_blank">Consultar</a>
+            </article>
+
+            <article class="skinCard">
+                <div class="rarity covert"></div>
+                <img src="assets/skins/awp.png" alt="AWP">
+                <h3>AWP</h3>
+                <p>Dragon Lore • Asiimov • Gungnir</p>
+                <a href="https://wa.me/5512981739656" target="_blank">Consultar</a>
+            </article>
+
+            <article class="skinCard">
+                <div class="rarity extraordinary"></div>
+                <img src="assets/skins/gloves.png" alt="Luvas">
+                <h3>Luvas</h3>
+                <p>Sport • Driver • Specialist</p>
+                <a href="https://wa.me/5512981739656" target="_blank">Consultar</a>
+            </article>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p>© 2026 VINAUM SKINS</p>
+        <div>
+            <a href="https://instagram.com/vinaum.skins" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5512981739656" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
